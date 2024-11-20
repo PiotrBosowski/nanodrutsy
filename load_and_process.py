@@ -91,6 +91,8 @@ if __name__=='__main__':
         'SbSI_Reflection_017.txt': '10',
         'SbSI_Reflection_018.txt': '11',
         'SbSI_Reflection_019.txt': '12',
+        'SbSI_Reflection_020.txt': '13',
+        'SbSI_Reflection_021.txt': '14',
         'SbSI_Reflection_022.txt': '15',
         'SbSI_Reflection_023.txt': '17',
         'SbSI_Reflection_024.txt': '19',
