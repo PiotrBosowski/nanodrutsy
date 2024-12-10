@@ -6,8 +6,8 @@ import matplotlib
 
 matplotlib.use('TkAgg')
 
-csv_file = "/mnt/c/Users/piotr/Desktop/processed_data-csv.csv"
-output_file = "/mnt/c/Users/piotr/Desktop/stacked-spectra.png"
+csv_file = "/mnt/c/Users/piotr/Desktop/pomiary-rafal/processed_data.csv"
+output_file = "/mnt/c/Users/piotr/pomiary-rafal/stacked-spectra.png"
 data = pd.read_csv(csv_file)
 
 wavelengths = data.iloc[:, 0]
@@ -21,8 +21,8 @@ for i, time in enumerate(experiment_times):
     intensity = spectra.iloc[:, i]
     ax.plot(wavelengths, [time] * len(wavelengths), intensity, label=f'Time: {time} min')
 
-ax.set_xlabel('Wavelength [nm]')
-ax.set_ylabel('Time of the experiment [min]')
-ax.set_zlabel('Intensity')
+ax.set_xlabel('Długość fali, nm')
+ax.set_ylabel('Czas trwania procesu, min')
+ax.set_zlabel('Natężenie światła')
 ax.set_title('3D Stacked Spectra Visualization')
 plt.show()
